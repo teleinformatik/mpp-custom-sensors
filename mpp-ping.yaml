@@ -1,0 +1,8 @@
+sensor:
+  name: "mpp-ping"
+  description: "Simple ping sensor in Python (latency + packet loss)"
+  tags: [ping, latency, custom]
+  executable: "mpp-ping.py"
+  arguments: ["{{ .Device.Host }}"]
+  result:
+    type: json
